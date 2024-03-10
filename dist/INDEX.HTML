@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="STYLE.CSS">
+</head>
+
+<body class="font-sans">
+
+    <!-- Header -->
+    <div class="navbar bg-[#131921] text-white py-2 px-5 flex justify-between items-center">
+
+        <!-- Logo -->
+        <div class="nav-logo">
+            <div class="logo lg:w-[120px] lg:h-5 w-[60px] bg-cover lg:mb-7"><img src="amazon_logo.png" alt=""></div>
+        </div>
+    
+        <!-- Address -->
+        <div class="nav-address hidden lg:block">
+            <p class="add-1">Deliver To</p>
+            <div class="address-icon flex items-center">
+                <i class="fas fa-map-marker-alt"></i>
+                <p class="add-2 ml-1">India</p>
+            </div>
+        </div>
+    
+        <!-- Search -->
+        <div class="nav-search flex items-center">
+            <select name="" id="search-select" class="py-[8px] border border-[#F3F3F3] text-black rounded hidden lg:block">
+                <option value="">All</option>
+                <option value="">Devices</option>
+                <option value="">Alexa</option>
+            </select>
+            <input placeholder="Search Amazon" id="search-input" class="p-2 lg:w-[600px] w-[150px] text-black border border-gray-300 rounded">
+            <div class="search-icon bg-[#F3A847] p-2 rounded">
+                <i class="fas fa-search text-black lg:px-[5px] lg:py-[5px]"></i>
+            </div>
+        </div>
+    
+        <!-- Sign In -->
+        <div class="nav-signin  ml-2">
+            <p><span class="lg:text-[12px] text-[12px]">Hello, sign in</span></p>
+            <p class="nav-2 lg:text-[14px] text-[13px] font-bold">Account & List</p>
+        </div>
+    
+        <!-- Return & Orders -->
+        <div class="nav-return  ml-2 hidden lg:block">
+            <p><span class="text-[12px]">Returns</span></p>
+            <p class="nav-2 text-[14px] font-bold">& Orders</p>
+        </div>
+    
+        <!-- Cart -->
+        <div class="nav-cart  ml-2 font-bold hidden lg:block">
+            <i class="fas fa-shopping-cart"></i>
+            cart
+        </div>
+    </div>
+    
+
+    <!-- Panel -->
+    <div class="panel h-10 bg-[#232F3E] flex items-center justify-between px-6 text-white">
+
+        <div class="left-section flex items-center justify-evenly">
+            <!-- All -->
+            <div class="panel-all w-12 text-[15px]">
+                <i class="fas fa-bars"></i>
+                All
+            </div>
+    
+            <!-- Options -->
+            <div class="panel-ops flex lg:text-[16px] text-[10px] lg:font-medium">
+                <p class="inline lg:ml-4 ml-3">Today's Deals</p>
+                <p class="inline lg:ml-4 ml-3">Customer Service</p>
+                <p class="inline lg:ml-4 ml-3">Registry</p>
+                <p class="inline lg:ml-4 ml-3">Gift Cards</p>
+                <p class="inline lg:ml-4 ml-3">Sell</p>
+            </div>
+        </div>
+    
+        <!-- Deals -->
+        <div class="panel-deals text-[15px] font-bold pr-10 rounded justify-between hidden lg:block">
+            <p>Shop deals in Electronics</p>
+        </div>
+    </div>
+    
+    
+
+    <!-- Hero Section -->
+    <div class="hero-section relative lg:h-96 h-[150px]">
+        <img src="shop books.jpg" alt="Hero Image" class="w-full h-full object-top object-cover">
+    
+        <div id="hero-msg" class="bg-white lg:mx-[50px] mx-5 text-black lg:h-9 h-5 absolute bottom-4 left-0 right-0 flex items-center justify-center lg:text-sm text-[8px]">
+            <p class="text-center ">
+                You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery.
+                <a href="" class="text-blue-500">Click here to go to amazon.in</a>
+            </p>
+        </div>
+    </div>
+    
+    
+
+<!-- Shop Section -->
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-4 bg-green-300 p-4 z-10">
+    <!-- Box 1 -->
+    <div class="box w-auto lg:h-[420px] h-[200px] bg-white px-5 lg:py-3 py-2 my-2">
+        <div class="box-content flex flex-col">
+            <h2 class="lg:text-xl text-[12px] font-bold mb-2 hidden lg:block">Health & Personal Care</h2>
+            <h2 class="lg:text-xl text-[12px] font-bold mb-2 block lg:hidden">Health & Personal <br> Care</h2>
+            <div class="box-img lg:h-[310px] h-[110px] lg:mt-2 object-cover mb-2" >
+                <img class="w-full h-full" src="health and personal.jpg" alt="">
+            </div>
+            <p class="text-blue-900">See more</p>
+        </div>
+    </div>
+
+    <!-- Box 2 -->
+    <div class="box w-auto lg:h-[420px] h-[200px] bg-white px-5 lg:py-3 py-2 my-2">
+        <div class="box-content flex flex-col">
+            <h2 class="lg:text-xl text-[12px] font-bold lg:mb-2">Home & Kitchen Under $30</h2>
+            <div class="box-img lg:h-[310px] h-[110px] mt-2 object-cover mb-2" >
+                <img class="w-full h-full" src="home kitchen. 1jpg.jpg" alt="">
+            </div>
+            <p class="text-blue-900">See more</p>
+        </div>
+    </div>
+
+    <!-- Box 3 -->
+    <div class="box w-auto lg:h-[420px] h-[200px] bg-white px-5 lg:py-3 py-2 my-2">
+        <div class="box-content flex flex-col">
+            <h2 class="lg:text-xl text-[12px] font-bold mb-2">Beauty picks</h2>
+            <div class="box-img lg:h-[310px] h-[110px] mt-2 object-cover mb-2" >
+                <img class="w-full h-full" src="beauty.jpg" alt="">
+            </div>
+            <p class="text-blue-900">See more</p>
+        </div>
+    </div>
+
+    <!-- Box 4 -->
+    <div class="box w-auto lg:h-[420px] h-[200px] bg-white px-5 lg:py-3 py-2 my-2">
+        <div class="box-content flex flex-col">
+            <h2 class="lg:text-xl text-[12px] font-bold mb-2">Electronics</h2>
+            <div class="box-img lg:h-[310px] h-[110px] mt-2 object-cover mb-2" >
+                <img class="w-full h-full" src="box4_image.jpg" alt="">
+            </div>
+            <p class="text-blue-900">See more</p>
+        </div>
+    </div>
+
+    <!-- Box 5 -->
+    <div class="box w-auto lg:h-[420px] h-[200px] bg-white px-5 lg:py-3 py-2 my-2">
+        <div class="box-content flex flex-col">
+            <h2 class="lg:text-xl text-[12px] font-bold mb-2">Furniture</h2>
+            <div class="box-img lg:h-[310px] h-[110px] mt-2 object-cover mb-2" >
+                <img class="w-full h-full" src="box3_image.jpg" alt="">
+            </div>
+            <p class="text-blue-900">See more</p>
+        </div>
+    </div>
+
+    <!-- Box 6 -->
+    <div class="box w-auto lg:h-[420px] h-[200px] bg-white px-5 lg:py-3 py-2 my-2">
+        <div class="box-content flex flex-col">
+            <h2 class="lg:text-xl text-[12px] font-bold mb-2">Pets</h2>
+            <div class="box-img lg:h-[310px] h-[110px] mt-2 object-cover mb-2" >
+                <img class="w-full h-full" src="box6_image.jpg" alt="">
+            </div>
+            <p class="text-blue-900">See more</p>
+        </div>
+    </div>
+
+    <!-- Box 7 -->
+    <div class="box w-auto lg:h-[420px] h-[200px] bg-white px-5 lg:py-3 py-2 my-2">
+        <div class="box-content flex flex-col">
+            <h2 class="lg:text-xl text-[12px] font-bold mb-2">Fashion</h2>
+            <div class="box-img lg:h-[310px] h-[110px] mt-2 object-cover mb-2" >
+                <img class="w-full h-full" src="box8_image.jpg" alt="">
+            </div>
+            <p class="text-blue-900">See more</p>
+        </div>
+    </div>
+
+    <!-- Box 8 -->
+    <div class="box w-auto lg:h-[420px] h-[200px] bg-white px-5 lg:py-3 py-2 my-2">
+        <div class="box-content flex flex-col">
+            <h2 class="lg:text-xl text-[12px] font-bold mb-2">Travel</h2>
+            <div class="box-img lg:h-[310px] h-[110px] mt-2 object-cover mb-2" >
+                <img class="w-full h-full" src="box7_image.jpg" alt="">
+            </div>
+            <p class="text-blue-900">See more</p>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class=" bg-[#232F3E] text-white">
+    <div class="flex flex-col flex-wrap justify-around">
+
+        <!-- Footer Panel 1 -->
+        <div class="foot-panel1 w-full py-2 text-center bg-[#485769]">
+            Back to Top
+        </div>
+
+        <!-- Footer Panel 2 -->
+        <div class="foot-panel2 grid grid-cols-2 lg:grid-cols-4 py-8 lg:px-16 px-6 gap-6">
+            
+            <!-- Column 1 -->
+            <div class="">
+                <ul class="flex flex-col">
+                    <p class="text-lg font-semibold">Get to Know Us</p>
+                    <a href="#" class="text-gray-300 mt-2 text-sm">Carrers</a>
+                    <a href="#" class="text-gray-300 mt-2 text-sm">Blog</a>
+                    <a href="#" class="text-gray-300 mt-2 text-sm">About Amazon</a>
+                    <a href="#" class="text-gray-300 mt-2 text-sm">Investors Relation</a>
+                    <a href="#" class="text-gray-300 mt-2 text-sm">Amazon Devices</a>
+                    <a href="#" class="text-gray-300 mt-2 text-sm">Amazon Science</a>
+                </ul>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="">
+                <ul class="flex flex-col">
+                    <p class="text-lg font-semibold">Make Money with Us</p>
+                    <a href="#" class="text-gray-300 mt-2 text-sm">Carrers</a>
+                    <a href="#" class="text-gray-300 mt-2 text-sm">Blog</a>
+                    <a href="#" class="text-gray-300 mt-2 text-sm">About Amazon</a>
+                    <a href="#" class="text-gray-300 mt-2 text-sm">Investors Relation</a>
+                    <a href="#" class="text-gray-300 mt-2 text-sm">Amazon Devices</a>
+                    <a href="#" class="text-gray-300 mt-2 text-sm">Amazon Science</a>
+                </ul>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="">
+                <ul class="flex flex-col">
+                    <p class="text-lg font-semibold">Get to Know Us</p>
+                    <a href="#" class="text-gray-300 mt-2 text-sm">Carrers</a>
+                    <a href="#" class="text-gray-300 mt-2 text-sm">Blog</a>
+                    <a href="#" class="text-gray-300 mt-2 text-sm">About Amazon</a>
+                    <a href="#" class="text-gray-300 mt-2 text-sm">Investors Relation</a>
+                    <a href="#" class="text-gray-300 mt-2 text-sm">Amazon Devices</a>
+                    <a href="#" class="text-gray-300 mt-2 text-sm">Amazon Science</a>
+                </ul>
+            </div>
+
+            <!-- Column 4 -->
+            <div class="">
+                <ul class="flex flex-col">
+                    <p class="text-lg font-semibold">Get to Know Us</p>
+                    <a href="#" class="text-gray-300 mt-2 text-sm">Carrers</a>
+                    <a href="#" class="text-gray-300 mt-2 text-sm">Blog</a>
+                    <a href="#" class="text-gray-300 mt-2 text-sm">About Amazon</a>
+                    <a href="#" class="text-gray-300 mt-2 text-sm">Investors Relation</a>
+                    <a href="#" class="text-gray-300 mt-2 text-sm">Amazon Devices</a>
+                    <a href="#" class="text-gray-300 mt-2 text-sm">Amazon Science</a>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer Panel 3 -->
+        <div class="foot-panel3 flex justify-center items-center border-t-2 border-gray-700 py-4">
+            <div class="logo bg-cover h-12 w-24">
+                <img src="amazon_logo.png" alt="">
+            </div>
+        </div>
+
+        <!-- Footer Panel 4 -->
+        <div class="foot-panel4 bg-[#131921] text-white text-center py-4 ">
+            <div class="pages">
+                <a href="#" class="underline text-violet-950 text-sm">Condition of Use</a>
+                <a href="#" class="underline text-violet-950 text-sm">Privacy Notice</a>
+                <a href="#" class="underline text-violet-950 text-sm">Your Ads Privacy Choices</a>
+            </div>
+            <div class="copyright text-xs pt-1">
+                © 1996-2023, Amazon.com, Inc. or its affiliates
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+
+</html>
